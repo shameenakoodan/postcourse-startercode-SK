@@ -4,7 +4,7 @@ import {
   addStudent,
   deleteStudent,
   getStudentById,
-  getStudentByName,
+ // getStudentByName,
   getStudents,
 } from "../controllers/studentController.js";
 
@@ -18,6 +18,6 @@ router.post("/", (req, res) => addStudent(req, res));
 
 router.delete("/:id", (req, res) => deleteStudent(req, res));
 
-router.get("/name/:name", (req, res) => getStudentByName(req, res));
+//router.get("/name/:name", (req, res) => getStudentByName(req, res));
 
 export default router;
